@@ -2,7 +2,7 @@ var webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
   config.set({
-    browers: ['Chrome'],
+    browsers: ['Chrome'],
     singleRun: true,
     frameworks: ['mocha'],
     files: ['app/tests/**/*.test.jsx'],
@@ -17,7 +17,7 @@ module.exports = function (config) {
     },
     webpack: webpackConfig,
     webpackServer: {
-      noInfor: true
+      noInfo: true
     }
   });
 }
